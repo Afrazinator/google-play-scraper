@@ -1,3 +1,25 @@
+# The Original README is under this
+
+This project is forked from the javascript scraper on GitHub. This additional guide is meant to help in writing a useful wrapper around this to extract the scraper output in Excel and manipulate for other purposes.
+
+The file of interest: `try.js`
+
+## Usage
+
+`$ node try.js` on a Windows Anaconda Terminal
+
+## Output
+
+It makes a JSON file in the same directory called `test.json`
+
+You can then convert the JSON to CSV through online mediums or the CLI. A good JavaScript CLI is [here](https://www.npmjs.com/package/json2csv) and can be used to output a file of your choice.
+
+If you used the CLI the relevant command is:
+
+`$ json2csv -i test.json -o test.csv`
+
+**Note**: I recommend using this CLI as it keeps auto detection on the JSON headers and you don't need to manually fill them yourself. 
+
 # google-play-scraper [![Build Status](https://secure.travis-ci.org/facundoolano/google-play-scraper.png)](http://travis-ci.org/facundoolano/google-play-scraper)
 Node.js module to scrape application data from the Google Play store.
 
